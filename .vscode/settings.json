@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "configurations": [
+        {
+            "name": "Debug Kafka Consumer",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/app-consumer.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src"
+            }
+        }
+    ]
+}
