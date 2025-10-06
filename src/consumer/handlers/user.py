@@ -1,7 +1,7 @@
 from aiokafka import ConsumerRecord
-from common.event_source.event_source_topic import EventData
+from src.common.event_source.event_source_topic import EventData
 from loguru import logger
-from consumer.interface import MessageHandler
+from src.consumer.interface import MessageHandler
 
 class UserHandler(MessageHandler):
     

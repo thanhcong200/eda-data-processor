@@ -5,10 +5,10 @@ from loguru import logger
 from aiokafka import AIOKafkaProducer, AIOKafkaConsumer, ConsumerRecord
 from typing import Type, Any, Union
 
-from consumer.interface import MessageHandler
-from config.environment import KAFKA_BROKERS, APP_NAME
+from src.consumer.interface import MessageHandler
+from src.config.environment import KAFKA_BROKERS, APP_NAME
 
-from common.event_source.event_source_topic import EventData
+from src.common.event_source.event_source_topic import EventData
 
 
 class KafkaAdapter:

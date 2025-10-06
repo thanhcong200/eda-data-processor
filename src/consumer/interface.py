@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from aiokafka import ConsumerRecord
 from typing import Optional
 
-from common.event_source.event_source_topic import EventData
+from src.common.event_source.event_source_topic import EventData
 
 class MessageHandler(ABC):
     @staticmethod
